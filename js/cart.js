@@ -83,7 +83,6 @@ function itemQuantity(product) {
 
 	setItems(product);
 
-	// var cartMobile = document.getElementsByClassName('cart-quantity-mobile');
 }
 
 function setItems(product) {
