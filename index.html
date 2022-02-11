@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>MR Technical Test</title>
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/cart.js" async></script>
+
+</head>
+<body>
+	<section id="main-nav" class="pad15">
+		<div class="container-fluid">
+			<div class="nav-wrap bg-gray">
+				<div class="container">
+					<div class="nav-container cart-nav d-flex">
+						<div id="dropdown-container" class="dropdown-wrap web-nav-wrap">
+							<button href="#" id="btn-trigger" class="my-cart text-light" onclick="miniCartButton()">My Cart ( <span class="cart-quantity">0</span> )</button>
+							<div id="mini-cart-dropdown" class="mini-cart-container">
+									
+							</div>
+						</div>
+						<div id="dropdown-container" class="dropdown-wrap mobile-nav-wrap">
+							<button href="#" id="btn-trigger" class="my-cart text-light" onclick="miniCartButton()">My Cart ( <span class="cart-quantity-mobile">0</span> )</button>
+							<div id="mini-cart-dropdown" class="mini-cart-container mobile-cart-container">
+									
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="cart-page" class="pad15">
+		<div class="container">
+			<div class="cart-items">
+				<div class="row cart-item">
+					<div class="col-md-6">
+						<div class="product-wrap">
+							<div class="image-wrap tac">
+								<img src="img/classicteesmall.jpg" alt="" class="img-responsive shop-item-img">
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="product-wrap">
+							<div class="product-name bottom20">
+								<div class="header-wrap">
+									<h5 class="header-5 bottom0 shop-item-name">Classic Tee</h5>
+								</div>
+							</div>
+							<div class="product-price bottom20">
+								<div class="text-wrap">
+									<p class="text-bold bottom0 shop-item-price">$75.00</p>
+								</div>
+							</div>
+							<div class="product-description bottom30">
+								<div class="text-wrap">
+									<p class="text-light bottom0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum perferendis quisquam, reiciendis consequuntur, et reprehenderit nemo optio, dolore vitae laboriosam sint sit eaque? Commodi soluta aliquam sint deserunt tenetur ut?</p>
+								</div>
+							</div>
+							<div class="product-size">
+								<div class="size-title bottom10">
+									<p class="ttu ls1 bottom0">Size<span class="required">*</span> <span id="numbers1" class="shop-item-size bottom0 text-bold"></span></p>
+								</div>
+								<div class="size-picker d-flex bottom60">
+								    <label class="size-select">
+								    	<input class="right5 size-radio" type="radio" id="size-s" name="group1" onclick="sizeSelect()" value="S" />
+								    	<span>S</span>
+								    </label>
+									<label class="size-select">
+										<input class="right5 size-radio" type="radio" id="size-m" name="group1" onclick="sizeSelect()" value="M" />
+										<span>M</span>
+									</label>
+									<label class="size-select">
+										<input class="right5 size-radio" type="radio" id="size-l" name="group1" onclick="sizeSelect()" value="L" />
+										<span>L</span>
+									</label>
+								</div>
+							</div>
+							<div class="add-to-cart">
+								<button class="btn def-btn ttu ls1 def-btn" onclick="errorTrigger()">Add to cart</button>
+								<button class="btn cart-btn ttu ls1 s-btn hide">Add to cart</button>
+								<button class="btn cart-btn ttu ls1 m-btn hide">Add to cart</button>
+								<button class="btn cart-btn ttu ls1 l-btn hide">Add to cart</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+</html>
